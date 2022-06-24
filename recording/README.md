@@ -32,11 +32,11 @@
 
 1. Modify `recording.sh` as specified below in [Customization](#customization).
 2. For use with Pisound button:
-    1. Place `recording.sh` in `/usr/local/pisound/scripts/pisound-btn/`
-    2. Run `patchbox`, and select "button" > "assign"
-    3. Choose the button action you want to assign recording toggle to
-    4. Choose "Recording" from the list of actions
-    5. "Back" > "Exit" to close the patchbox wizard
+   1. Place `recording.sh` in `/usr/local/pisound/scripts/pisound-btn/`
+   2. Run `patchbox`, and select "button" > "assign"
+   3. Choose the button action you want to assign recording toggle to
+   4. Choose "Recording" from the list of actions
+   5. "Back" > "Exit" to close the patchbox wizard
 
 ### Customization:
 

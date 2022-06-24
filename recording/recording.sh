@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. /usr/local/pisound/scripts/common/common.sh
+. /usr/local/pisound/scripts/common/common.sh # import functions from common.sh
 
 FNAME="recording_$(date +%F_%H-%M-%S)" # naming convention for recording files
 
