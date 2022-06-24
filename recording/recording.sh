@@ -17,7 +17,7 @@ if screen -list | grep -q "recording"; then # if recording already started
 
         ffmpeg -i "/home/patch/$FNAME.wav" -vn -ar 44100 -ac 2 -b:a 192k "/home/patch/$FNAME.mp3" # convert to mp3
 
-        # transfer to bluetooth device, continue if it fails (denied by device or failed to connect)
+        # transfer mp3 to bluetooth device, continue if it fails (denied by device or failed to connect)
         obexftp --nopath --noconn --uuid none --bluetooth $BT_MAC --channel $BT_CH -v --put "/home/patch/$FNAME.mp3" || echo "failed to send"
 
         rm -rf "/home/patch/$FNAME.mp3" # delete the mp3 file
